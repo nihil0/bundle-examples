@@ -1,6 +1,6 @@
-.PHONY: init watch
+.PHONY: sync edit
 
-init:
+sync:
 	databricks bundle generate dashboard --existing-path '/Workspace/Users/{{user_name}}/{{.dashboard_path}}.lvdash.json'
 
 edit:
